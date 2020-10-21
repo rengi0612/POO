@@ -1,0 +1,13 @@
+C:\Users\invit\Desktop\POO\Granjirilla\bin\Debug\netcoreapp3.1\Granjirilla.exe
+C:\Users\invit\Desktop\POO\Granjirilla\bin\Debug\netcoreapp3.1\Granjirilla.deps.json
+C:\Users\invit\Desktop\POO\Granjirilla\bin\Debug\netcoreapp3.1\Granjirilla.runtimeconfig.json
+C:\Users\invit\Desktop\POO\Granjirilla\bin\Debug\netcoreapp3.1\Granjirilla.runtimeconfig.dev.json
+C:\Users\invit\Desktop\POO\Granjirilla\bin\Debug\netcoreapp3.1\Granjirilla.dll
+C:\Users\invit\Desktop\POO\Granjirilla\bin\Debug\netcoreapp3.1\Granjirilla.pdb
+C:\Users\invit\Desktop\POO\Granjirilla\obj\Debug\netcoreapp3.1\Granjirilla.csprojAssemblyReference.cache
+C:\Users\invit\Desktop\POO\Granjirilla\obj\Debug\netcoreapp3.1\Granjirilla.AssemblyInfoInputs.cache
+C:\Users\invit\Desktop\POO\Granjirilla\obj\Debug\netcoreapp3.1\Granjirilla.AssemblyInfo.cs
+C:\Users\invit\Desktop\POO\Granjirilla\obj\Debug\netcoreapp3.1\Granjirilla.csproj.CoreCompileInputs.cache
+C:\Users\invit\Desktop\POO\Granjirilla\obj\Debug\netcoreapp3.1\Granjirilla.dll
+C:\Users\invit\Desktop\POO\Granjirilla\obj\Debug\netcoreapp3.1\Granjirilla.pdb
+C:\Users\invit\Desktop\POO\Granjirilla\obj\Debug\netcoreapp3.1\Granjirilla.genruntimeconfig.cache

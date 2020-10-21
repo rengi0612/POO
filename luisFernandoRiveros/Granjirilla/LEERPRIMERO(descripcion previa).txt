@@ -1,0 +1,50 @@
+Descripcion general
+
+Usuario: lulin
+Contraseña: LULEN8
+------------------------------------------------------------------------------------
+La granja posee diferentes lugares
+-Areas de cultivo
+-Tiene un sector de energia, en donde se recargan los robots y se administra energia a todo el lugares
+-Tiene un sector de descanso, donde estan los robots mientras no estan en usarlos
+-Tiene un sector de mantenimiento donde se reparan los robots
+-Una bodega
+
+---------Info sembrados-------------------------------
+La hacienda, posee diferentes espacios para cultivar sembrados,
+Para generar un nuevo sembrado, usted debe ingresar el nombre
+de la planta que va a cultivar(la cual debe estar en la base de datos)
+debido a qe asi el terreno sera preparado con los mutrientes necesarias para esta
+cada area de sembrado mide 1 hectarea(10000m^2),  Existen espacios de sembrado de reserva,
+pero para usarlos las areas principales deben estar llenas.
+
+Los sembrados, tienen condiciones diarias(luz, nutrientes, agua) que se deben satisfacer dependiendo de la planta
+Ademas, para esto cada una de las instalaciones de sembrado de la granja, posee:
+. Un techo el cual se cierra para que no reciba mas luz de la necesaria
+. Lamparas UV, para cuando la planta necesite recibir mas luz
+. Sistema de riego, para regarla cuando se necesite
+
+----------Info plantas----------
+La base de datos contiene un espacio con la informacion acerca de las plantas que existen en la granja
+en donde  tiebne diferentes valores como:
+nombre de la planta
+Tasa de crecimiento
+Requerimientos de agua,luz y nutrientes.
+Espacio necesario para crecer
+Cantidad en kilogramos de produccion media, para administrar el espacio en bodega
+Cantidad de semillas por kilogramo de producto, para admministrar cuantas semillas se dejan por cosecha
+
+-----------Info robots-----------
+Hay 3 tipos dferentes de robots.
+-recoleccion
+-sembrado
+-limpieza
+Todos los robots tienen una variables para controlar su nivel de energia y su cantidad de daño(durabilidad)
+Ademas siempre se sabe donde esta ubicado el robot
+----------Info Bodega------
+La granja tiene una bodega, en donde se almacenan:
+-Semillas
+-Producto cosechado
+-Robots que no se van a usar
+
+
