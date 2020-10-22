@@ -1,0 +1,22 @@
+Tarea Individual 1 POO
+Juan Fernando Rengifo Meneses
+Usuario: Juan 
+Contraseña: Jfrm0612
+
+Requisitos:
+* Identificar tipo de semilla a cultivar y determinar cantidad de agua
+* Panel de contro donde este regustro de todas las plantas, lugar, crecimiento...
+* El sistema permite entrar solo a 1 usuario
+* El sistema cuenta con 2 robots 1 para cosechar y el otro para sembrar
+* El sistema permite conocer el estado de los 5 posibles espacios de cultivo
+* El sistema cuenta con un catálogo de las plantas para sembrar
+* El sistema cuenta con un almacen en donde se almacenan las semillas y los productos recogido por planta
+* El sistema tiene una zona de mantenimiento y recargo para los robots
+* El sistema simula el tiempo para notar el crecimiento de las plantas. 
+
+Comentarios:
+Los robots son mandados a la zona de recarga y mantenimiento. Sin embargo, no se logró que salieran de ahí basandose en el tiempo que llevan internados.
+El sistema emula un cultivo hidropónico, en donde no hay hectáreas sembradas sino 5 torres de n macetas cada una.
+Es posible ver dependiendo del minuto en que un cultivo fue creado y el minuto actual, el estado del cultivo que pueden ser semilla, brote, floración, maduración y sacar.
+El estado sacar significa que ya es posible retirar la planta. 
+
