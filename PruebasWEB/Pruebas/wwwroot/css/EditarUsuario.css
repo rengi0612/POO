@@ -1,0 +1,89 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background-image: url("../Imagenes/fondoPerfil.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#MainWrapper
+{
+    height: 100vh;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows:20% 70% 10%;
+}
+#Titulo
+{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    text-align: center;
+    color: darkgreen;
+    font-size: xx-large;
+}
+/*#Titulo h1
+{
+    color: darkgreen;
+    font-size: 100%;
+    text-align: center;
+}*/
+#MainWrapper form
+{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    background-color: rgba(0, 128, 0,0.5);
+    border-radius: 0.8em;
+}
+#MainWrapper form h1
+{
+    text-align: center;
+    color: white;
+    margin-top: 0.5em;
+}
+#MainWrapper form ul
+{
+    list-style: none;
+    height: 90%;
+}
+#MainWrapper form ul li
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 32%;
+    margin-left: 32%;
+    margin-top: 3%;
+}
+#MainWrapper form ul li label
+{
+    color: white;
+    font-size: 1.2em;
+}
+#MainWrapper form ul li input
+{
+    border: none;
+    outline: none;
+    padding: 0.5%;
+}
+#MainWrapper form ul li#opciones
+{
+    display: flex;
+    justify-content: center;
+}
+#MainWrapper form ul li#opciones button
+{
+    border: none;
+    padding: 0.1em 0.3em;
+    background-color: darkgreen;
+    font-size: 1em;
+    color: white;
+}
+#MainWrapper form ul li#opciones button:hover
+{
+    background-color: rgb(15, 235, 15);
+    cursor: pointer;
+}

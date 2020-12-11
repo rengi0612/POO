@@ -1,0 +1,51 @@
+*
+        {
+            margin: 0;
+            padding: 0;
+
+        }
+        body
+        {
+            background-image: url("../Imagenes/fondoPerfil.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+        }
+        #primerDiv
+        {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+        #primerDiv h1
+        {
+            color: darkgreen;
+            font-size: 5em;
+            font-style: italic;
+        }
+        #SegundoDiv
+        {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+        #SegundoDiv p
+        {
+            color: darkgreen;
+            font-size: 2em;
+            font-style: italic;
+            cursor: pointer;
+        }
+        #SegundoDiv a
+        {
+            color: darkgreen;
+            font-size: 2em;
+            text-decoration: none;
+        }
+        #SegundoDiv p :hover
+        {
+            background-color: aqua;
+            border-radius: 0.5em;
+        }
