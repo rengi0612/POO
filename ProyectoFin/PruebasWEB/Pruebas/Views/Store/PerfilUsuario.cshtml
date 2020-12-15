@@ -1,0 +1,35 @@
+@model Pruebas.Models.Usuario
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+    <link rel="stylesheet" href="~/css/PerfilUser.css" />
+</head>
+<body>
+    
+    <div id="MainWrapper">
+        <div id="hola">
+            <a href='https://www.freepik.es/fotos/comida'>Foto de Comida creado por azerbaijan_stockers - www.freepik.es</a>
+        </div>
+        <div id="Titulo"><h1>Perfil de Usuario</h1></div>
+        <div id="Cuadro1">
+            
+            <ul>
+                <li><label>Usuario: @Model.usuario</label></li>
+                <li><label>Nombre: @Model.nombre</label></li>
+                <li><label>Cédula: @Model.cedula</label></li>
+                <li><label>Tipo: @Model.Tipo</label></li>
+                <li><label>Dirección: @Model.Direccion</label></li>
+                <li><label>Telefono: @Model.telefono</label></li>
+                <li><label>Método pago: @Model.metodoPago</label></li>
+            </ul>
+            <div id="opciones">
+                <button type="submit">Volver</button>
+                <button type="submit"><a asp-controller="Store" asp-action="EditarUsuario" asp-route-id="@Model.ID">Editar Perfil</a></button>
+            </div>  
+        </div>
+    </div>
+</body>
+</html>

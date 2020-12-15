@@ -1,0 +1,51 @@
+@model Pruebas.Models.Usuario
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/css/EditarUsuario.css" />
+</head>
+<body>
+    <div id="MainWrapper">
+        <div id="Titulo">
+            <h1>Editar Perfil</h1>
+        </div>
+        <form asp-action="ReemplazarUsuario" method="POST">
+            <input type="hidden" asp-for="ID">
+            <h1>Perfil de Usuario</h1>
+            <ul>
+                <li>
+                    <label>Usuario: @Model.usuario </label>
+                </li>
+                <li>
+                    <label>Nombre: @Model.nombre </label>
+                </li>
+                <li>
+                    <label>Cédula: @Model.cedula</label>
+                </li>
+                <li>
+                    <label>Tipo: @Model.Tipo</label>
+                </li>
+                <li>
+                    <label asp-for="Direccion">Dirección </label>
+                    <input asp-for="Direccion">
+                </li>
+                <li>
+                    <label asp-for="telefono">Telefono </label>
+                    <input asp-for="telefono">
+                </li>
+                <li>
+                    <label asp-for="metodoPago">Método pago </label>
+                    <input asp-for="metodoPago">
+                </li>
+                <li id="opciones">
+                    <button type="submit">Guardar</button>
+                </li>
+            </ul>
+
+        </form>
+    </div>
+</body>
+</html>

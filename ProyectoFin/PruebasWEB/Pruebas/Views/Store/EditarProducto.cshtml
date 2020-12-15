@@ -1,0 +1,46 @@
+@model Pruebas.Models.Producto
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/css/EditarUsuario.css" />
+</head>
+<body>
+    <div id="MainWrapper">
+        <div id="Titulo">
+            <h1>Editar Perfil</h1>
+        </div>
+        <form asp-action="ReemplazarProducto" method="POST">
+            <input type="hidden" asp-for="ID">
+            <h1>Producto</h1>
+            <ul>
+                <li>
+                    <label>Nombre: @Model.Nombre </label>
+                </li>
+                <li>
+                    <img src="~/Imagenes/Products/@Model.Imagen" alt="">
+                </li>
+                <li>
+                    <label>Categoria: @Model.Categoria</label>
+                </li>
+                
+                <li>
+                    <label asp-for="Precio">Precio </label>
+                    <input asp-for="Precio">
+                </li>
+                <li>
+                    <label asp-for="Cantidad">Cantidad </label>
+                    <input asp-for="Cantidad">
+                </li>
+                
+                <li id="opciones">
+                    <button type="submit">Guardar</button>
+                </li>
+            </ul>
+
+        </form>
+    </div>
+</body>
+</html>

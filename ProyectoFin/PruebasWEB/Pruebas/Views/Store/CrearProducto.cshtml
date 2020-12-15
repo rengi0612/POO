@@ -1,0 +1,65 @@
+@model Pruebas.Models.Productofile
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/css/EditarUsuario.css" />
+</head>
+<body>
+    <div id="MainWrapper">
+        <div id="Titulo">
+            <h1>Crear Producto</h1>
+        </div>
+        <form asp-action="GuardarProducto" asp-route-ID="@ViewData["ID"]" method="POST" enctype="multipart/form-data">
+            <h1>Perfil de Usuario</h1>
+            <ul>
+                <li>
+                    <label asp-for="Nombre"></label>
+                    <input asp-for="Nombre">
+                </li>
+                <li>
+                    <label asp-for="Categoria"></label>
+                    <input asp-for="Categoria">
+                </li>
+                <li>
+                    <label asp-for="Precio"></label>
+                    <input asp-for="Precio">
+                </li>
+                <li>
+                    <label asp-for="Cantidad"></label>
+                    <input asp-for="Cantidad">
+                </li>
+                <li>
+                    <label asp-for="Organicidad"></label>
+                    <input asp-for="Organicidad">
+                </li>
+                <li>
+                    <label asp-for="Estado"></label>
+                    <input asp-for="Estado">
+                </li>
+
+                <li class="col-md-6">  
+                        <div class="form-group">  
+                            <label asp-for="ProfileImage" class="control-label"></label>  
+                            <div class="custom-file"> 
+                                <input asp-for="ProfileImage" class="custom-file-input" id="customFile">  
+                                <label class="custom-file-label" for="customFile"></label>  
+                            </li>  
+                            <span asp-validation-for="ProfileImage" class="text-danger"></span>  
+@*@model IEnumerable<Pruebas.Models.Producto>  
+    @foreach (var producter in Model)  
+    <img src="~/images/Products/@producter.imagen"   
+                         class="rounded-circle"   
+                         height="40" width="40"   
+                         asp-append-version="true" />  *@
+                <li id="opciones">
+                    <button type="submit">Guardar</button>
+                </li>
+            </ul>
+
+        </form>
+    </div>
+</body>
+</html>

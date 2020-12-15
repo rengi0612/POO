@@ -1,0 +1,44 @@
+@model Pruebas.ViewModels.ListProducto
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="~/css/MostrarProducto.css" />
+
+    
+</head>
+<body>
+    
+    <div id="MainWrapper">
+        <h1>Carrito</h1>
+        <ul>@foreach (var producter in Model.ListaProductos)  
+            {
+            <div>
+            <label> Nombre Producto : @Html.DisplayFor(modelItem => producter.Nombre)</label>  
+            <li> 
+            <img src="~/Imagenes/Products/@producter.Imagen" alt="">
+            <a  asp-controller="Store" asp-action= "@ViewData["opciones"]" asp-route-idusuario="@ViewData["ID"]" asp-route-idproducto="@producter.ID">Quitar carrito</a>
+            
+
+            </li>
+            <label>Precio/u: @Html.DisplayFor(modelItem => producter.Precio)</label>
+            </div>
+            }
+        </ul>
+        <a  asp-controller="Ingreso" asp-action= "Ingreso" >Comprar</a>
+    </div>
+    @*<ul>
+            <li>
+                <img src="~/Imagenes/Products/Balon1.jpg" alt="">
+                <label>Balón Basketball</label>
+            </li>
+        </ul>
+        
+           
+            class="rounded-circle"   
+            height="40" width="40"*@
+    
+</body>
+</html>

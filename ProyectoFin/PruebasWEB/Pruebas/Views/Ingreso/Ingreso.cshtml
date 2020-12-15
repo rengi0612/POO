@@ -1,0 +1,33 @@
+@model Pruebas.Models.Usuario
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso</title>
+    <link rel="stylesheet" href="~/css/Ingreso.css" />
+</head>
+<body>
+    <div id="MainWrapper">
+        <h1>@ViewData["Message"]</h1>
+        <form asp-action="Validar" method="POST">
+            <h1>Ingreso Usuario</h1>
+            <ul>
+                <li>
+                    <label asp-for="usuario" ></label>
+                    <input asp-for="usuario">
+                </li>
+                <li>
+                    <label asp-for="contraseña"></label>
+                    <input asp-for="contraseña">
+                </li>
+                <li id="Botones">
+                    <button id="Izquierdo" type="button"><a href="https://localhost:5001/Ingreso/CrearUsuario">Crear Usuario</a></button>
+                    <button type="submit">Ingresar</button>
+                </li>
+            </ul>
+        </form>
+    </div>
+</body>
+</html>
